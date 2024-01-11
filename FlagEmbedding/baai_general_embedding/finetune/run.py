@@ -97,7 +97,7 @@ def main():
     Path(training_args.output_dir).mkdir(parents=True, exist_ok=True)
 
     # Training
-    trainer.train()
+    trainer.train("checkpoint-52000")
     trainer.save_model()
     # For convenience, we also re-save the tokenizer to the same directory,
     # so that you can share your model easily on huggingface.co/models =)
